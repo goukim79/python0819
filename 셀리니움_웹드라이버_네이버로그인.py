@@ -21,9 +21,8 @@ clipboard.copy(loginPW)
 driver.find_element(By.XPATH,'//*[@id="pw"]').send_keys(
     Keys.CONTROL, 'v')
 time.sleep(1)
-
 # 로그인 버튼 클릭
-driver.find_element(By.XPATH,'//*[@id="log.login"]').click()
+driver.find_element(By.XPATH,'//*[@id="loginBtn_row"]').click()
 
 while True:
     pass 
