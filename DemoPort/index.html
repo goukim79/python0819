@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="개발자 김성호의 포트폴리오 웹사이트입니다.">
+  <title>김성호 | Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="홈으로 이동">KSH<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">메뉴</button>
+    <nav id="main-nav" class="main-nav" aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락하기</a>
+    </nav>
+    <a class="header-contact" href="mailto:goukim79@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-kicker"><span class="status-dot"></span> Available for new projects <span class="kicker-year">2026 / 01</span></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Frontend Developer · Seoul, KR</p>
+          <h1 id="hero-title">사람을 향한<br><em>코드</em>를 만듭니다<span class="accent">.</span></h1>
+          <p class="hero-description">디테일한 인터랙션과 단단한 구조로<br>복잡한 문제를 선명한 경험으로 바꿉니다.</p>
+          <a class="button button-primary" href="#projects">작업물 보러가기 <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-art" aria-label="김성호의 모노그램 그래픽">
+          <span class="art-label">SELECTED<br>WORKS / 24—26</span>
+          <div class="monogram" aria-hidden="true">K<br><span>/</span>S</div>
+          <span class="art-note">BUILDING<br>WITH INTENT</span>
+        </div>
+      </div>
+      <div class="hero-marquee" aria-hidden="true"><span>CODE WITH CARE</span><span>CODE WITH CARE</span><span>CODE WITH CARE</span></div>
+    </section>
+
+    <section id="about" class="about section-wrap" aria-labelledby="about-title">
+      <div class="section-index">01 / ABOUT</div>
+      <div class="about-content">
+        <h2 id="about-title">좋은 제품은<br><span>좋은 질문</span>에서<br>시작됩니다.</h2>
+        <div class="about-text">
+          <p>안녕하세요, 김성호입니다. 사용자의 맥락을 이해하고 제품의 본질을 코드로 옮기는 프론트엔드 개발자입니다.</p>
+          <p>작은 화면의 간격부터 서비스 전체의 흐름까지, 오래 쓰이고 다시 찾게 되는 디지털 경험을 고민합니다.</p>
+          <div class="facts"><div><strong>5+</strong><span>YEARS<br>EXPERIENCE</span></div><div><strong>18</strong><span>PROJECTS<br>SHIPPED</span></div><div><strong>∞</strong><span>CURIOSITY<br>LEVEL</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section-wrap" aria-labelledby="projects-title">
+      <div class="section-heading"><div class="section-index">02 / SELECTED WORKS</div><h2 id="projects-title">최근 작업물<span class="accent">.</span></h2></div>
+      <div class="filter-bar" role="group" aria-label="프로젝트 필터"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="product">Product</button><button class="filter" data-filter="web">Web</button><button class="filter" data-filter="brand">Brand</button></div>
+      <div class="project-list">
+        <article class="project-card" data-category="product"><div class="project-number">01</div><div class="project-visual visual-coral"><span>WAVE<br>06:42</span><div class="visual-circle"></div></div><div class="project-info"><p class="project-type">Product · 2026</p><h3>Wave<br>Wellness App</h3><p>매일의 리듬을 기록하고 회복을 돕는 웰니스 경험.</p><a href="#contact" aria-label="Wave Wellness App 자세히 보기">View case <span>↗</span></a></div></article>
+        <article class="project-card" data-category="web"><div class="project-number">02</div><div class="project-visual visual-blue"><span>SEOUL<br>STORIES</span><div class="visual-grid"></div></div><div class="project-info"><p class="project-type">Web · 2025</p><h3>Seoul<br>Stories</h3><p>도시의 숨은 장면을 발견하는 아카이브 플랫폼.</p><a href="#contact" aria-label="Seoul Stories 자세히 보기">View case <span>↗</span></a></div></article>
+        <article class="project-card" data-category="brand"><div class="project-number">03</div><div class="project-visual visual-lime"><span>NOON<br>STUDIO</span><div class="visual-block"></div></div><div class="project-info"><p class="project-type">Brand · 2025</p><h3>Noon<br>Studio</h3><p>일상의 균형을 위한 브랜드 아이덴티티와 웹사이트.</p><a href="#contact" aria-label="Noon Studio 자세히 보기">View case <span>↗</span></a></div></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section-wrap" aria-labelledby="contact-title">
+      <div class="section-index">03 / CONTACT</div>
+      <div class="contact-inner"><p class="eyebrow">Have a project in mind?</p><h2 id="contact-title">함께 멋진 것을<br><em>만들어볼까요?</em><span class="accent">.</span></h2><a class="email-link" href="mailto:goukim79@gmail.com">goukim79@gmail.com <span aria-hidden="true">↗</span></a><button id="copy-email" class="copy-button" type="button">이메일 복사</button></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><span>© 2026 KIM SEONGHO</span><span>DESIGNED & BUILT WITH CARE</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite">이메일 주소를 복사했습니다.</div>
+</body>
+</html>
